@@ -1,1 +1,10 @@
-console.log('Express Tutorial')
+const express = require('express')
+const app = express()
+
+app.get('/', (req, res)=>{
+    res.send('they hit the pentagon')
+})
+
+app.listen(5000, ()=>{
+    console.log('Server is listening...')
+})
